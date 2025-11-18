@@ -19,22 +19,22 @@
       <link rel="stylesheet" href="./assets/css/styles.css" />
    </head>
    <body>
-      <main>
+      <main id="home">
          <!-- dời nav bar ra thẻ body để xài position sticky, sẽ ko bị hết sticky đến hết trang vì thẻ cha là main -->
          <header class="fixed-header">
             <div class="content">
                <nav class="nav-bar">
                   <!-- Logo -->
-                  <a href="#home"
+                  <a href="#!"
                      ><img src="./assets/img/logo.svg" alt="Company Logo"
                   /></a>
                   <!--Navigation  -->
                   <ul>
-                     <li><a href="">Home</a></li>
-                     <li><a href="">Features</a></li>
-                     <li><a href="">Services</a></li>
-                     <li><a href="">Resources</a></li>
-                     <li><a href="">Contacts</a></li>
+                     <li><a href="#home">Home</a></li>
+                     <li><a href="#service">Services</a></li>
+                     <li><a href="#feature">Features</a></li>
+                     <li><a href="#resource">Resources</a></li>
+                     <li><a href="#contacts">Contacts</a></li>
                   </ul>
                   <!-- Action -->
                   <div class="action">
@@ -187,7 +187,7 @@
             </div> -->
          <!-- Guide section -- F8 chữa bài -->
 
-         <div class="guide">
+         <div id="service" class="guide">
             <div class="content">
                <h2 class="sub-title">How its works?</h2>
                <p class="desc">
@@ -256,7 +256,7 @@
          <!-- Guide Section End -->
 
          <!-- Feature Section from F8 -->
-         <div class="feature">
+         <div id="feature" class="feature">
             <div class="content">
                <header>
                   <h2 class="sub-title">Featured Properties</h2>
@@ -383,7 +383,7 @@
          <!-- Feature End -->
 
          <!-- Stats -->
-         <div class="stats">
+         <div id="resource" class="stats">
             <div class="content">
                <div class="row">
                   <div class="img-block">
@@ -554,7 +554,7 @@
          <!-- Stats End -->
 
          <!-- Subscription -->
-         <div class="subscription">
+         <div id="contacts" class="subscription">
             <div class="content">
                <div class="content-body">
                   <div class="info">
