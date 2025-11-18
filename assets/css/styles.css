@@ -769,10 +769,14 @@ h2 {
 .footer .social .social-link {
    width: 28px;
    height: 28px;
-   /* background-color: red; */
+   background-color: #f9f9f9;
    display: flex;
    align-items: center;
    justify-content: center;
+}
+/* Những cái .social-link đứng đằng sau 1 social link nằm trong thẻ footer -> cái .social-link đầu tiên sẽ ko bị ảnh hưởng */ 
+.footer .social-link + .social-link {
+   margin-left: 1.6rem;
 }
 
 .footer .social .social-link:hover {
