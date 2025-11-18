@@ -80,14 +80,6 @@ h2 {
    /* padding-top: 3.8rem; */
    padding: 12px 0;
 }
-.hero-wrap {
-   display: flex;
-   position: relative;
-   /* padding-top: 3.8rem; */
-   background: #e6f0ff;
-   height: calc(100vh - 90px);
-   max-height: 73.6rem;
-}
 
 .nav-bar {
    display: flex;
@@ -132,8 +124,18 @@ h2 {
 
 /* Hero Section */
 
+.hero-wrap {
+   display: flex;
+   position: relative;
+   align-items: center;
+   /* padding-top: 3.8rem; */
+   background: #e6f0ff;
+   height: calc(100vh - 90px);
+   max-height: 73.6rem;
+}
+
 .hero {
-   margin-top: 11.8rem;
+   /* margin-top: 11.8rem; */
    /* Dùng padding-top nếu ko muốn sử dụng display:flex cho thẻ cha */
    /* padding-top: 11.8rem; */
 }
