@@ -20,7 +20,8 @@
    </head>
    <body>
       <main>
-         <header class="header">
+         <!-- dời nav bar ra thẻ body để xài position sticky, sẽ ko bị hết sticky đến hết trang vì thẻ cha là main -->
+         <header class="fixed-header">
             <div class="content">
                <nav class="nav-bar">
                   <!-- Logo -->
@@ -41,6 +42,29 @@
                      <a href="" class="btn action-btn">Sign Up</a>
                   </div>
                </nav>
+            </div>
+         </header>
+         <div class="hero-wrap">
+            <div class="content">
+               <!-- <nav class="nav-bar">
+
+                  <a href="#home"
+                     ><img src="./assets/img/logo.svg" alt="Company Logo"
+                  /></a>
+
+                  <ul>
+                     <li><a href="">Home</a></li>
+                     <li><a href="">Features</a></li>
+                     <li><a href="">Services</a></li>
+                     <li><a href="">Resources</a></li>
+                     <li><a href="">Contacts</a></li>
+                  </ul>
+
+                  <div class="action">
+                     <a href="" class="action-link">Sign in</a>
+                     <a href="" class="btn action-btn">Sign Up</a>
+                  </div>
+               </nav> -->
                <!-- Header Content -->
                <div class="hero">
                   <div class="info">
@@ -62,7 +86,7 @@
                   />
                </div>
             </div>
-         </header>
+         </div>
          <div class="clients">
             <div class="content">
                <div class="row row-1">

@@ -62,9 +62,23 @@ h2 {
 }
 
 /* Header */
-.header {
+
+.fixed-header{
+   background-color: #e6f0ff;
+   padding-top: 2.6rem;
+   position: sticky;
+   top: -26px;
+   z-index: 1;
+}
+
+.fixed-header .nav-bar {
+   /* padding-top: 3.8rem; */
+   padding: 12px 0;
+}
+.hero-wrap {
+   display: flex;
    position: relative;
-   padding-top: 3.8rem;
+   /* padding-top: 3.8rem; */
    background: #e6f0ff;
    height: 100vh;
    max-height: 73.6rem;
@@ -73,6 +87,7 @@ h2 {
 .nav-bar {
    display: flex;
    align-items: center;
+   /* background: orangered; */
 }
 
 .nav-bar > ul {
@@ -113,7 +128,9 @@ h2 {
 /* Hero Section */
 
 .hero {
-   margin-top: 13rem;
+   margin-top: 11.8rem;
+   /* Dùng padding-top nếu ko muốn sử dụng display:flex cho thẻ cha */
+   /* padding-top: 11.8rem; */
 }
 
 .hero .info {
