@@ -4,6 +4,27 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>F8 Project 01 - Simple RealEstate Landing Page</title>
+      <!-- Favicon -->
+      <link
+         rel="apple-touch-icon"
+         sizes="180x180"
+         href="./assets/favicon/apple-touch-icon.png"
+      />
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="32x32"
+         href="./assets/favicon/favicon-32x32.png"
+      />
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="16x16"
+         href="./assets/favicon/favicon-16x16.png"
+      />
+      <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+      <!-- CSS -->
       <link rel="stylesheet" href="./assets/css/reset.css" />
       <!-- <link rel="stylesheet" href="./assets/fonts/stylesheet.css" /> -->
       <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,31 +40,31 @@
       <link rel="stylesheet" href="./assets/css/styles.css" />
    </head>
    <body>
+      <!-- dời nav bar ra thẻ body để xài position sticky, sẽ ko bị hết sticky đến hết trang vì thẻ cha là main -->
+      <header class="fixed-header">
+         <div class="content">
+            <nav class="nav-bar">
+               <!-- Logo -->
+               <a href="#"
+                  ><img src="./assets/img/logo.svg" alt="Company Logo"
+               /></a>
+               <!--Navigation  -->
+               <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#service">Services</a></li>
+                  <li><a href="#feature">Features</a></li>
+                  <li><a href="#resource">Resources</a></li>
+                  <li><a href="#contacts">Contacts</a></li>
+               </ul>
+               <!-- Action -->
+               <div class="action">
+                  <a href="" class="action-link">Sign in</a>
+                  <a href="" class="btn action-btn">Sign Up</a>
+               </div>
+            </nav>
+         </div>
+      </header>
       <main>
-         <!-- dời nav bar ra thẻ body để xài position sticky, sẽ ko bị hết sticky đến hết trang vì thẻ cha là main -->
-         <header class="fixed-header">
-            <div class="content">
-               <nav class="nav-bar">
-                  <!-- Logo -->
-                  <a href="#"
-                     ><img src="./assets/img/logo.svg" alt="Company Logo"
-                  /></a>
-                  <!--Navigation  -->
-                  <ul>
-                     <li><a href="#">Home</a></li>
-                     <li><a href="#service">Services</a></li>
-                     <li><a href="#feature">Features</a></li>
-                     <li><a href="#resource">Resources</a></li>
-                     <li><a href="#contacts">Contacts</a></li>
-                  </ul>
-                  <!-- Action -->
-                  <div class="action">
-                     <a href="" class="action-link">Sign in</a>
-                     <a href="" class="btn action-btn">Sign Up</a>
-                  </div>
-               </nav>
-            </div>
-         </header>
          <div class="hero-wrap">
             <div class="content">
                <div class="hero">
@@ -555,94 +576,91 @@
             </div>
          </div>
          <!-- Subscription End -->
-
-         <!-- Footer -->
-         <footer class="footer">
-            <div class="content">
-               <div class="row row-1">
-                  <!-- Product Column -->
-                  <div class="column">
-                     <h3 class="heading">Product</h3>
-                     <ul class="list">
-                        <li class="item">
-                           <a href="">Listing</a>
-                        </li>
-                        <li class="item">
-                           <a href="">Property</a>
-                        </li>
-                        <li class="item">
-                           <a href="">Agents</a>
-                        </li>
-                        <li class="item">
-                           <a href="">Blog</a>
-                        </li>
-                     </ul>
-                  </div>
-                  <div class="column">
-                     <h3 class="heading">Resources</h3>
-                     <ul class="list">
-                        <li class="item">
-                           <a href="">Our Homes</a>
-                        </li>
-                        <li class="item">
-                           <a href="">Member Stories</a>
-                        </li>
-                        <li class="item">
-                           <a href="">Video</a>
-                        </li>
-                        <li class="item">
-                           <a href="">Free trial</a>
-                        </li>
-                     </ul>
-                  </div>
-                  <div class="column">
-                     <h3 class="heading">Company</h3>
-                     <ul class="list">
-                        <li class="item">
-                           <a href="">Patnerships</a>
-                        </li>
-                        <li class="item">
-                           <a href="">Terms of use</a>
-                        </li>
-                        <li class="item">
-                           <a href="">Privacy</a>
-                        </li>
-                        <li class="item">
-                           <a href="">Sitemap</a>
-                        </li>
-                     </ul>
-                  </div>
-                  <!-- Get In Touch Column -->
-                  <div class="column">
-                     <h3 class="heading">Get in touch</h3>
-                     <p class="desc">
-                        You’ll find your next home, in any style you prefer.
-                     </p>
-                     <div class="social">
-                        <a href="" class="social-link">
-                           <img src="./assets/img/Footer/Facebook.svg" alt="" />
-                        </a>
-                        <a href="" class="social-link">
-                           <img src="./assets/img/Footer/Twitter.svg" alt="" />
-                        </a>
-                        <a href="" class="social-link">
-                           <img src="./assets/img/Footer/Linkedin.svg" alt="" />
-                        </a>
-                     </div>
-                  </div>
+      </main>
+      <!-- Footer -->
+      <footer class="footer">
+         <div class="content">
+            <div class="row row-1">
+               <!-- Product Column -->
+               <div class="column">
+                  <h3 class="heading">Product</h3>
+                  <ul class="list">
+                     <li class="item">
+                        <a href="">Listing</a>
+                     </li>
+                     <li class="item">
+                        <a href="">Property</a>
+                     </li>
+                     <li class="item">
+                        <a href="">Agents</a>
+                     </li>
+                     <li class="item">
+                        <a href="">Blog</a>
+                     </li>
+                  </ul>
                </div>
-               <div class="row-2">
-                  <img
-                     src="./assets/img/logo.svg"
-                     alt="Besnik Logo"
-                     class="logo"
-                  />
-                  <p class="copyright">
-                     Copyright 2020.com, All rights reserved
+               <div class="column">
+                  <h3 class="heading">Resources</h3>
+                  <ul class="list">
+                     <li class="item">
+                        <a href="">Our Homes</a>
+                     </li>
+                     <li class="item">
+                        <a href="">Member Stories</a>
+                     </li>
+                     <li class="item">
+                        <a href="">Video</a>
+                     </li>
+                     <li class="item">
+                        <a href="">Free trial</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="column">
+                  <h3 class="heading">Company</h3>
+                  <ul class="list">
+                     <li class="item">
+                        <a href="">Patnerships</a>
+                     </li>
+                     <li class="item">
+                        <a href="">Terms of use</a>
+                     </li>
+                     <li class="item">
+                        <a href="">Privacy</a>
+                     </li>
+                     <li class="item">
+                        <a href="">Sitemap</a>
+                     </li>
+                  </ul>
+               </div>
+               <!-- Get In Touch Column -->
+               <div class="column">
+                  <h3 class="heading">Get in touch</h3>
+                  <p class="desc">
+                     You’ll find your next home, in any style you prefer.
                   </p>
+                  <div class="social">
+                     <a href="" class="social-link">
+                        <img src="./assets/img/Footer/Facebook.svg" alt="" />
+                     </a>
+                     <a href="" class="social-link">
+                        <img src="./assets/img/Footer/Twitter.svg" alt="" />
+                     </a>
+                     <a href="" class="social-link">
+                        <img src="./assets/img/Footer/Linkedin.svg" alt="" />
+                     </a>
+                  </div>
                </div>
             </div>
-         </footer>
-      </main>
+            <div class="row-2">
+               <img
+                  src="./assets/img/logo.svg"
+                  alt="Besnik Logo"
+                  class="logo"
+               />
+               <p class="copyright">Copyright 2020.com, All rights reserved</p>
+            </div>
+         </div>
+      </footer>
    </body>
 </html>
