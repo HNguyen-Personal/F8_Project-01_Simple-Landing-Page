@@ -1,0 +1,277 @@
+/* PC */
+
+@media screen and (min-width: 992px) {
+   .mobile-header {
+      display: none;
+   }
+   .show-on-mobile {
+      display: none;
+   }
+}
+
+/* Tablet & Mobile */
+
+@media screen and (max-width: 991.98px) {
+   .content {
+      margin: 0;
+      width: 91%;
+   }
+   .nav-bar {
+      position: relative;
+   }
+   .feature .row {
+      width: 96%;
+   }
+
+   .feature .list {
+      width: 96%;
+   }
+   .nav-bar .logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+   .nav-bar ul {
+      display: none;
+   }
+
+   .toggle-menu svg {
+      width: 20px;
+      color: #666;
+   }
+
+   .menu-overlay {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 1;
+      /* ẩn overlay by default */
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.5s ease;
+   }
+
+   .menu-drawer {
+      position: fixed;
+      inset: 0 40% 0 0;
+      padding: 60px;
+      background-color: #fff;
+      z-index: 2;
+      transform: translateX(-100%);
+      transition: 0.5s ease;
+   }
+
+   .menu-drawer ul {
+      margin-top: 32px;
+   }
+   .menu-drawer ul a {
+      display: block;
+      color: #333;
+      padding: 14px 0;
+      font-weight: 600;
+   }
+
+   /* khi input được check thì ẩn */
+   .menu-checkbox:checked ~ .menu-overlay {
+      opacity: 1;
+      visibility: visible;
+   }
+
+   .menu-checkbox:checked ~ .menu-drawer {
+      transform: translateX(0);
+   }
+   .separate {
+      border-top: solid 1px #ebebeb;
+   }
+   .fixed-header .nav-bar {
+      width: 91vw;
+   }
+
+   .hero-img {
+      display: none;
+   }
+
+   .hero .info {
+      width: 80%;
+      text-align: center;
+      margin: 0 auto;
+   }
+   .hero .desc {
+      width: 80%;
+      margin: 30px auto 0;
+   }
+
+   .clients .row-2 p:last-child {
+      text-align: right;
+   }
+
+   .row-2 p {
+      font-size: 1.2rem;
+   }
+   .feature .list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+   }
+   .clients .row-3 {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   .clients .row-3 a {
+      padding: 0 21px;
+   }
+
+   .guide {
+      margin-top: 0;
+      padding: 10px 0 30px;
+   }
+   .stats {
+      padding: 0;
+   }
+   .stats .row {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .stats .img-block,
+   .stats .info {
+      width: 96%;
+   }
+
+   .stats .info {
+      padding: 79px 0;
+      order: 1;
+   }
+
+   .stats .img-block {
+      display: flex;
+      justify-content: space-between;
+      order: 2;
+   }
+
+   .stats .img-block .image {
+      width: 50%;
+      height: auto;
+      margin-left: 0;
+   }
+   .stats .stats-trend {
+      display: block;
+      position: relative;
+   }
+
+   .stats .info .sub-title {
+      width: 70%;
+   }
+
+   .stats .info .desc {
+      width: 96%;
+   }
+
+   .stats .row-qty {
+      flex-direction: row;
+   }
+
+   .stats .row-qty .qty-title {
+      font-size: 5rem;
+   }
+
+   .stats .row-qty .qty-desc {
+      font-size: 1.5rem;
+   }
+
+   .subscription .image {
+      display: none;
+   }
+
+   .footer .row-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 9rem;
+   }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 991.96px) {
+   .show-on-mobile {
+      display: none;
+   }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 767.98px) {
+   .menu-drawer {
+      inset: 0 25% 0 0;
+      padding: 40px;
+   }
+   .nav-bar > .action {
+      display: none;
+   }
+
+   .hero .title {
+      font-size: 5rem;
+   }
+
+   .hero-wrap {
+      height: 80vh;
+   }
+
+   .clients {
+      padding: 0;
+   }
+
+   .clients .row-3 {
+      flex-direction: column;
+      margin: 2rem 0;
+   }
+
+   .list-guide {
+      gap: 11px;
+   }
+   .guide-item {
+      margin: 0;
+   }
+   .feature .row {
+      align-items: center;
+   }
+   .feature .row .link {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+   .feature .list {
+      grid-template-columns: 1fr;
+   }
+
+   .stats .info .sub-title {
+      height: auto;
+      width: 100%;
+   }
+   .stats .img-block {
+      flex-direction: column;
+   }
+   .stats .img-block .image {
+      width: 100%;
+   }
+
+   .stats .stats-trend {
+      margin: 20px auto;
+   }
+
+   .stats .row-qty {
+      flex-direction: column;
+      margin-top: 5rem;
+      gap: 2rem;
+   }
+
+   .stats .row-qty .qty-desc {
+      text-align: center;
+   }
+
+   .subscription .content-body .sub-title {
+      font-size: 2.5rem;
+   }
+   .footer .row-1 .column .desc {
+      width: 100%;
+   }
+}

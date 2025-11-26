@@ -141,7 +141,7 @@ h2 {
 }
 
 .hero .info {
-   max-width: 51%;
+   width: 51%;
 }
 
 .hero .sub-title {
@@ -203,9 +203,9 @@ h2 {
 
 .clients .row-2 p:last-child {
    /* margin-right: auto; */
-   position: absolute;
+   /* position: absolute;
    bottom: 0.7rem;
-   right: 0;
+   right: 0; */
 }
 
 .clients row-2 p {
@@ -423,13 +423,14 @@ h2 {
    display: flex;
    gap: 0.8rem;
    align-items: center;
-   position: absolute;
+   /* position: absolute;
    right: 0;
-   top: -0.5rem;
+   top: -0.5rem; */
 }
 
 .feature .list {
-   display: flex;
+   display: grid;
+   grid-template-columns:repeat(3, 1fr);
    margin-top: 70px;
    gap: 30px;
 }
